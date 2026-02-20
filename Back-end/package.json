@@ -1,0 +1,36 @@
+{
+  "name": "profile-backend",
+  "version": "1.0.0",
+  "description": "backend of profile application",
+  "main": "app,js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "author": "Shadi Alhamdo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.9.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "joi": "^18.0.2",
+    "joi-password-complexity": "^5.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "multer": "^2.0.2",
+    "nodemailer": "^8.0.1",
+    "streamifier": "^0.1.1",
+    "xss": "^1.0.15",
+    "xss-clean": "^0.1.4",
+    "xss-clean-types": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
