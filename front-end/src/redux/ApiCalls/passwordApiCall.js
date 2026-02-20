@@ -1,0 +1,51 @@
+import { toast } from "react-toastify";
+import {passwordActions} from "../Slices/passwordSlice"
+import request from '../../utils/request'
+
+
+
+
+
+// Forgot Password
+export function forgotPassword(email){
+    return async ()=>{
+        
+        try {
+            const {data} = await request.post("/api/password/reset-password-link",{email});
+            toast.success(data.message);           
+
+        } catch (error) {
+            toast.error(error.response.data.message);
+        }
+    }
+}
+
+//Get Reset Password 
+export function getResetPassword(userId,token){
+    return async (dispatch)=>{
+        try {
+            const {data} = await request.get(`/api/password/reset-password/${userId}/${token}`);
+        } catch (error) {
+            console.log(error.response.data.message);
+            dispatch(passwordActions.setError());
+        }
+    }
+}
+
+// Reset The Password
+export function resetPassword(newPassord,user){
+    return async ()=>{
+        try {
+            const {data} = await request.post(
+                `/api/password/reset-password/${user.userId}/${user.token}`,
+                {password:newPassord}
+            );
+            toast.success(data.message);
+           
+
+        } catch (error) {
+            toast.error(error.response.data.message);
+        }
+    }
+}
+

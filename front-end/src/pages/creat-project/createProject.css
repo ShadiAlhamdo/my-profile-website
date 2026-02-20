@@ -1,0 +1,62 @@
+.create-project{
+    background-color: var(--gray-color);
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.create-project-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--first-color);
+}
+
+.create-project-form{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.create-project-input , .create-project-textarea , .create-project-upload{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--gray-color);
+    font-size: 21px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.create-project-textareas{
+    resize: none;
+}
+
+.create-project-upload{
+    background-color: var(--gray-color);
+    border: 1px sold black;
+}
+.create-project-btn{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.error{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width:820px) {
+    .create-project-form{
+     width: 100%;   
+    }
+}

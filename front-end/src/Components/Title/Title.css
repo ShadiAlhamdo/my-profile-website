@@ -1,0 +1,26 @@
+.heading{
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+.heading h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.heading h3{
+    color: rgb(75 85 99 );
+    font-weight: 300;
+}
+.heading .border-down{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading .rounded-full{
+    height: 8px;
+    width: 60px;
+    background-color: #1aa7ec;
+    border-radius: 5px;
+}

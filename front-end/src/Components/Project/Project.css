@@ -1,0 +1,84 @@
+.project .content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.project .content .projectcard{
+    height: 600px;
+    padding: 10px 20px;
+    border-radius: 10px;
+   border:  2px solid #e5e7eb  ;
+   transition: 0.3s;
+}
+.project .content .projectcard:hover{
+    box-shadow:1px 1px 9px 1px rgb(68 68 79 / 30%)
+}
+.project .content .projectcard img{
+    width: 100%;
+}
+.project .content .projectcard .date{
+    font-size: 14px;
+    margin: 5px 0;
+    color: rgb(177, 66, 66);
+    padding: 10px 20px;
+    background-color:rgba(177, 66, 66, 0.3); 
+    border: 1px solid rgb(177, 66, 66);
+    border-radius: 5px;
+}
+.project .content .projectcard .project-name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.project .content .projectcard .project-name div{
+     display: flex;
+    justify-content: space-between;
+    
+}
+.project .content .projectcard .project-name a{
+    color: #1aa7ec;
+    background-color: #e5e7eb;
+    border: 1px solid #1aa7ec;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: max-content;
+    transition: 0.3s;
+}
+.project .content .projectcard .project-name span:hover{
+    color: #fff;
+    background-color: #1aa7ec;
+}
+.project .content .projectcard .project-name span i{
+    margin:0 5px;
+}
+.project .content .projectcard .desc{
+   color: rgb(55 65 81);
+   margin-bottom: 10px;
+}
+.project .content .projectcard .tools{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.project .content .projectcard .tools span{
+    color: #1aa7ec;
+    background-color: #e5e7eb;
+    border: 1px solid #1aa7ec;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.project .buttons{
+    display: flex;
+    justify-content: center;
+}
+.project .buttons .active{
+    background-color: #fff;
+    color: var(--second_color);
+    border: 2px solid var(--second_color);
+}

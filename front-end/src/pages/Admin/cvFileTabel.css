@@ -1,0 +1,112 @@
+.cv-header {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+}
+
+.table-container {
+  flex: 10;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  height: calc(100vh - 130px);
+  overflow-x: auto; /* مهم */
+}
+.table-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background: #020617;
+  color: #38bdf8;
+}
+
+tbody tr {
+  border-bottom: 1px solid #1e293b;
+}
+
+.status.available {
+  background: #16a34a;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.btn.download {
+  background: #0284c7;
+  color: white;
+}
+
+.btn.update {
+  background: #eab308;
+  color: #000;
+}
+
+.btn.delete {
+  background: #dc2626;
+  color: white;
+}
+
+.btn.upload {
+  background: #22c55e;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.no-cv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .table-title {
+    font-size: 18px;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

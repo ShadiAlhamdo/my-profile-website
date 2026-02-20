@@ -1,0 +1,108 @@
+.contact form{
+    min-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+.contact form .w-49{
+    width: 49%;
+} 
+.contact form .w-100{
+    width: 100%;
+    padding: 20px 0;
+}
+.contact form label{
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact form .form-input{
+    padding: 10px 20px;
+    border: 2px solid #e5e7eb;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+
+}
+.contact form textarea{
+    outline: none;
+    border: 2px solid #e5e7eb;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    height: 100px;
+}
+.contact form textarea:focus ,.contact form .form-input:focus{
+    border-color: #898a8d;
+}
+.contact form .secondary-btn{
+    display: block;
+    margin: 20px auto;
+    color: #4adede;
+    border-color: #4adede;
+    cursor: pointer;
+}
+.contact form .secondary-btn:hover{
+    color: #fff;
+    background-color: #4adede;
+}
+.contact .flex{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.contact .flex  span{
+    margin: 0 5px;
+}
+.contact .flex .line{
+    height: 1px;
+    width: 40%;
+    background-color: #898a8d;
+}
+.contact .contact-links{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .contact-links a{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+.contact .contact-links a i{
+    margin-right: 5px;
+}
+.contact .contact-links a.whatsapp{
+    background-color: #075e54;
+    border-color: #075e54;
+}
+.contact .contact-links a.facebook{
+    background-color: #1877F2 ;
+    border-color: #1877F2 ;
+}
+.contact .contact-links a.telegram{
+    background-color: #24A1DE;
+    border-color: #24A1DE;
+}
+.contact .contact-links a.github{
+    background-color: #f2a60c;
+    border-color: #f2a60c;
+}
+.contact .contact-links a:hover{
+    opacity: 0.8;
+}

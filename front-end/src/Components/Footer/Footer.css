@@ -1,0 +1,20 @@
+.footer{
+    background-color: #eeeeee36;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.footer .light{
+    font-size: 18px;
+    color:  rgb(75 85 99 );
+    ;
+}
+.footer .dark{
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+}
+.footer .dark i{
+    margin-right: 5px;
+}

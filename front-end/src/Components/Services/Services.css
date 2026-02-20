@@ -1,0 +1,83 @@
+.services{
+   background-color:  #eeeeee36;
+}
+.services .content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.services .content .service-card{
+    height: auto;
+    border:1px solid #1aa7ec;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+.services .content .service-card:hover{
+    background-color: #1aa7ec;
+    color: white;
+}
+.services .content .service-card i{
+    color: #1aa7ec;
+    font-size: 32px;
+}
+.services .content .service-card:hover i{
+    color: white;
+}
+.services .content .service-card h3{
+    font-size: 24px;
+    margin: 10px;
+    transition: 0.3s;
+}
+.services .content .service-card p{
+    color: rgb(55 65 81);
+    line-height: 1.8;
+    transition: 0.3s;
+}
+.services .flex{
+    display: flex;
+    min-height: 350px;
+}
+.services .flex .row{
+    width: 50%;
+}
+.services .flex .left,.services .right{
+    padding: 20px 30px;
+
+}
+.services .flex .left{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services .flex .left h3{
+    margin-top: 40px;
+    font-size: 38px;
+}
+.services .flex .left p{
+    height: 8px;
+    width: 120px;
+    background-color: #1aa7ec;
+    border-radius: 5px;
+}
+.services .flex .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .flex .right ul{
+    margin-top: 40px;
+}
+.services .flex .right ul li{
+    margin-top: 5px;
+    padding: 10px 20px;
+    display: flex;
+}
+.services .flex .right ul li i{
+    color: #1aa7ec;
+    margin-right: 5px;
+    font-size: 24px;
+}
