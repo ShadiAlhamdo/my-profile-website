@@ -33,9 +33,17 @@ app.use(rateLimit({
 app.use(express.urlencoded({ extended: true }));
 
 // Cors Policy
+// Cors Policy - تعديل هذا الجزء بدقة
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
-}))
+    origin: [
+        "https://shadialhamdo.com", 
+        "https://www.shadialhamdo.com",
+        process.env.FRONTEND_URL // لإبقاء التوافق مع أي رابط آخر تضعه في البيئة
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Routes Middleware
 app.use('/api/auth', require('./routes/authRoute'));
@@ -54,3 +62,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server is Running On Port ${PORT}`);
 });
+
+module.exports = app;
