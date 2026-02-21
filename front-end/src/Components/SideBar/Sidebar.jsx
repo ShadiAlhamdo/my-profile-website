@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUser, logoutUser } from "../../redux/ApiCalls/authApiCall";
+import { logoutUser } from "../../redux/ApiCalls/authApiCall";
 
 const UserSidebar = ({ isOpen, toggleSidebar, toggleTheme,dark }) => {
   

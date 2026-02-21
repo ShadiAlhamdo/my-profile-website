@@ -15,7 +15,7 @@ useEffect(()=>{
     if(userId && token){
         dispatch(getResetPassword(userId,token));
     }
-},[userId,token])
+},[userId, token, dispatch])
 
 // FormSubmitHandler
 const formSubmitHandler=(e)=>{

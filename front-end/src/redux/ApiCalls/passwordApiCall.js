@@ -24,7 +24,7 @@ export function forgotPassword(email){
 export function getResetPassword(userId,token){
     return async (dispatch)=>{
         try {
-            const {data} = await request.get(`/api/password/reset-password/${userId}/${token}`);
+            await request.get(`/api/password/reset-password/${userId}/${token}`);
         } catch (error) {
             console.log(error.response.data.message);
             dispatch(passwordActions.setError());

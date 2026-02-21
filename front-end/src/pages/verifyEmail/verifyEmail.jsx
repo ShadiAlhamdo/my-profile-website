@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './verifyEmail.css';
 import { Link ,useParams} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
@@ -11,7 +11,7 @@ export default function VerifyEmail() {
 
  useEffect( () => {
   dispatch(verifyEmail(userId, token));
-    }, [userId, token]);
+    }, [userId, token, dispatch]);
 
 
     
