@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# يخبر جميع محركات البحث (جوجل، بينج، إلخ)
 User-agent: *
-Disallow:
+
+# السماح بفهرسة كل الموقع
+Allow: /
+
+# منع جوجل من أرشفة لوحة التحكم أو روابط الدخول (لخصوصية مبرمج مثلك)
+Disallow: /login
+Disallow: /admin
+Disallow: /dashboard
+
+# توجيه جوجل لملف خريطة الموقع (Sitemap) لتسهيل الوصول إليك
+Sitemap: https://shadialhamdo.com/sitemap.xml
