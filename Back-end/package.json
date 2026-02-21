@@ -2,8 +2,9 @@
   "name": "profile-backend",
   "version": "1.0.0",
   "description": "backend of profile application",
-  "main": "app,js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app"
   },
   "author": "Shadi Alhamdo",
