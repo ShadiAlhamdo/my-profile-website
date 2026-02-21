@@ -2,7 +2,6 @@ const express = require('express');
 const connectToDb = require('./Config/connectToDb');
 const { errorHandler, notFound } = require('./middlewares/error');
 const cors = require("cors");
-const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 const hpp = require("hpp");
 require('dotenv').config();
@@ -23,12 +22,7 @@ app.use(helmet());
 app.use(hpp());
 
 
-// Rate Limiting Middleware
-app.use(rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 200, // Limit each IP to 100 requests per windowMs
-    message: "Too many requests from this IP, please try again after 15 minutes"
-}));
+
 // Support URL-encoded form bodies (e.g., form submissions)
 app.use(express.urlencoded({ extended: true }));
 
