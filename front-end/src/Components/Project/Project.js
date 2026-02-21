@@ -69,7 +69,7 @@ const Project = () => {
         {/* ===== Projects ===== */}
         <div className="content">
           {filteredProjects?.map((project) => (
-            <scrollAnimation
+            <ScrollAnimation
                animateIn='flipInY'
                animateOut='flipOutY'
               className="projectcard"
@@ -91,10 +91,10 @@ const Project = () => {
                 </p>
 
                 <div className="project-url">
-                  <a href={project.liveDemo} target="_blank">
+                  <a href={project.liveDemo} target="_blank" rel="noreferrer">
                     <i className="fa-regular fa-eye"></i> demo
                   </a>
-                  <a href={project.githubLink} target="_blank">
+                  <a href={project.githubLink} target="_blank" rel="noreferrer">
                     <i className="fa-solid fa-download"></i> source
                   </a>
                 </div>
@@ -113,7 +113,7 @@ const Project = () => {
                   Details
                 </Link>
               </div>
-            </scrollAnimation>
+            </ScrollAnimation>
           ))}
         </div>
       </div>
