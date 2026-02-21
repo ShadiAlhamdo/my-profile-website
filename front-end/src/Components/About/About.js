@@ -31,7 +31,7 @@ const About = () => {
           <div className='row right'>
             <article>
               <h1>{lng === "en" ? `Shadi Alhamdo` : `شادي الحمدو`}</h1>
-              <p>
+              <p className='about-p'>
                 {lng === 'en' ? (
                   <>
                     I am a <strong>Computer Engineer</strong> with a passion for building scalable web applications and industrial automation systems. 

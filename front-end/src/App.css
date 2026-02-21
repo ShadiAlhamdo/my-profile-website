@@ -973,7 +973,7 @@ body.dark a , body.dark .header .logo a{
 body.dark .home .container .secondary-btn {
     color: var(--black-color);
 }
-
+body .dark .about-p,
 body.dark p,
 body.dark .contact form label,
 body.dark .form-footer,
