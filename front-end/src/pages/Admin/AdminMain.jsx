@@ -31,31 +31,31 @@ const AdminMain = () => {
     {
       title: "Users",
       count: usersCount || 0,
-      link: "/admin/users-table",
+      link: "/admin/users-tabel",
       icon: "fa-users",
     },
     {
       title: "Categories",
       count: categoriesCount || 0,
-      link: "/admin/categories-table",
+      link: "/admin/categories-tabel",
       icon: "fa-layer-group",
     },
     {
       title: "Projects",
       count: projectsCount || 0,
-      link: "/admin/projects-table",
+      link: "/admin/projects-tabel",
       icon: "fa-box-archive",
     },
     {
       title: "Messages",
       count: messagesCount || 0,
-      link: "/admin/messages-table",
+      link: "/admin/messages-tabel",
       icon: "fa-message",
     },
    {
       title: "CV File",
       count: cvUrl ? 1 : 0,
-      link: "/admin/cv-table",
+      link: "/admin/cv-tabel",
       icon: "fa-file",
     }
   ];
