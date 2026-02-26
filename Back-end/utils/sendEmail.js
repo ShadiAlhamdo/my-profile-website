@@ -4,9 +4,9 @@ module.exports = async function sendEmail(userEmail, subject, htmlTemplate) {
     try {
         // إنشاء الـ transporter بإعدادات أكثر صرامة للإنتاج
         const transporter = nodeMailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465, // استخدام المنفذ الآمن SSL
-            secure: true, // يجب أن يكون true للمنفذ 465
+            host: 'smtp-relay.brevo.com',
+            port: 587, // استخدام المنفذ الآمن SSL
+            secure: false, // يجب أن يكون false للمنفذ 587
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS,
