@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
+import { fetchCategories } from "../../redux/ApiCalls/categoryApicall";
 
 const Categories =()=>{
     const dispatch = useDispatch();
     const {categories} = useSelector((state) => state.category);
 
     useEffect(()=>{
-        console.log("Categories page loaded");
+        dispatch(fetchCategories());
     },[])
     return(
         <div className="Categories">
