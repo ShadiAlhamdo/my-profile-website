@@ -949,6 +949,13 @@ tr:hover{
 .theme-btn {
   color: #facc15;
 }
+.Categories{
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* ================= DARK THEME ================= */
 body.dark {
   background-color: #020617;
