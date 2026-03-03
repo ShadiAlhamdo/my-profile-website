@@ -21,6 +21,7 @@ import NotFound from './pages/not-found/NotFound';
 import { useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import VerifyEmail from './pages/verifyEmail/verifyEmail';
+import Categories from './pages/Categories/Categories';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/users/:userId/verify/:token" element={!user ?<VerifyEmail/>:<Navigate to={"/"}/>}/>
           <Route path="/forgot-password" element={<ForgotPassword/>}/>
           <Route path="/reset-password/:userId/:token" element={<ResetPassword/>}/>
+          <Route path="/categories" element={<Categories/>}/>
           <Route path="*" element={<NotFound/>}/>
 
         </Routes>
