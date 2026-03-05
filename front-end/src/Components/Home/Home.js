@@ -45,7 +45,7 @@ const Home = () => {
 
                     <div className="buttons">
                         {/* SEO: إضافة العنوان (title) يحسن الأرشفة */}
-                        <a href="#contact" className='primary-btn animation-1' title="Contact Shadi Alhamdo">
+                        <a href="https://www.linkedin.com/in/shadi-alhamdo-89b6273b2" className='primary-btn animation-1' title="Contact Shadi Alhamdo">
                             {lng === 'en' ? `Contact me` : `تواصل معي`} 
                             <i className="fa-brands fa-linkedin"></i>
                         </a>
