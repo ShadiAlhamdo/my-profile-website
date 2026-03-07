@@ -249,7 +249,7 @@ ul{
 .project .category-buttons .active{
     background-color: #fff;
     color: var(--black-color);
-    border: 2px solid var(--second_color);
+    border: 1px solid var(--black-color);
 }
 /* Project Details Css*/
 .project-details{
@@ -822,7 +822,7 @@ tr:hover{
         width: 90%;
     }
     .project .category-buttons button { 
-    padding: 5px !important;
+    padding: 2px !important;
     font-size: 16px;
    }
 }
